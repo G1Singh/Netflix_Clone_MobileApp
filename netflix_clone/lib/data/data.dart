@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-//import 'package:flutter_netflix_responsive_ui/assets.dart';
-//import 'package:flutter_netflix_responsive_ui/models/models.dart';
 import 'package:netflix_clone/assets.dart';
 import 'package:netflix_clone/models/models.dart';
 
@@ -17,61 +15,61 @@ final List<Content> previews = const [
   Content(
     name: 'Avatar The Last Airbender',
     imageUrl: Assets.atla,
-    color: Colors.orange,
+    colors: Colors.orange,
     titleImageUrl: Assets.atlaTitle,
   ),
   Content(
     name: 'The Crown',
     imageUrl: Assets.crown,
-    color: Colors.red,
+    colors: Colors.red,
     titleImageUrl: Assets.crownTitle,
   ),
   Content(
     name: 'The Umbrella Academy',
     imageUrl: Assets.umbrellaAcademy,
-    color: Colors.yellow,
+    colors: Colors.yellow,
     titleImageUrl: Assets.umbrellaAcademyTitle,
   ),
   Content(
     name: 'Carole and Tuesday',
     imageUrl: Assets.caroleAndTuesday,
-    color: Colors.lightBlueAccent,
+    colors: Colors.lightBlueAccent,
     titleImageUrl: Assets.caroleAndTuesdayTitle,
   ),
   Content(
     name: 'Black Mirror',
     imageUrl: Assets.blackMirror,
-    color: Colors.green,
+    colors: Colors.green,
     titleImageUrl: Assets.blackMirrorTitle,
   ),
   Content(
     name: 'Avatar The Last Airbender',
     imageUrl: Assets.atla,
-    color: Colors.orange,
+    colors: Colors.orange,
     titleImageUrl: Assets.atlaTitle,
   ),
   Content(
     name: 'The Crown',
     imageUrl: Assets.crown,
-    color: Colors.red,
+    colors: Colors.red,
     titleImageUrl: Assets.crownTitle,
   ),
   Content(
     name: 'The Umbrella Academy',
     imageUrl: Assets.umbrellaAcademy,
-    color: Colors.yellow,
+    colors: Colors.yellow,
     titleImageUrl: Assets.umbrellaAcademyTitle,
   ),
   Content(
     name: 'Carole and Tuesday',
     imageUrl: Assets.caroleAndTuesday,
-    color: Colors.lightBlueAccent,
+    colors: Colors.lightBlueAccent,
     titleImageUrl: Assets.caroleAndTuesdayTitle,
   ),
   Content(
     name: 'Black Mirror',
     imageUrl: Assets.blackMirror,
-    color: Colors.green,
+    colors: Colors.green,
     titleImageUrl: Assets.blackMirrorTitle,
   ),
 ];

@@ -7,13 +7,14 @@ class Content {
   final String titleImageUrl;
   final String videoUrl;
   final String description;
-  final Color color;
+  final Color colors;
+
   const Content({
     @required this.name,
     @required this.imageUrl,
     this.titleImageUrl,
-    this.videoUrl,
     this.description,
-    this.color,
+    this.videoUrl,
+    this.colors,
   });
 }
