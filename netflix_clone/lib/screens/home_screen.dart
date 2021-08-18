@@ -10,18 +10,43 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  ScrollController _scrollController;
+  double _scrollOffSet = 0.0;
+
+  @override
+  void initState() {
+    _scrollController = ScrollController()
+      ..addListener(() {
+        setState(() {
+          _scrollOffSet = _scrollController.offset;
+        });
+      });
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     final Size screenSize = MediaQuery.of(context).size;
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.grey[900],
+        backgroundColor: Colors.grey[800],
         child: const Icon(Icons.cast),
         onPressed: () => print('Cast'),
       ),
       appBar: PreferredSize(
         preferredSize: Size(screenSize.width, 50.0),
-        child: CustomAppBar(),
+        child: CustomAppBar(
+          scrollOffSet: _scrollOffSet,
+        ),
+      ),
+      body: CustomScrollView(
+        controller: _scrollController,
       ),
     );
   }
