@@ -80,8 +80,10 @@ class _PlayButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton.icon(
       onPressed: () => print('Play'),
-      style: ButtonStyle(
-        backgroundColor: MaterialStateProperty.all(Colors.white),
+      style: TextButton.styleFrom(
+        //backgroundColor: MaterialStateProperty.all(Colors.white),
+        backgroundColor: Colors.white,
+        padding: const EdgeInsets.fromLTRB(15.0, 5.0, 20.0, 5.0),
       ),
       icon: const Icon(
         Icons.play_arrow,
