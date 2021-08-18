@@ -11,12 +11,48 @@ final Content sintelContent = Content(
       'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
 );
 
+final Content arrowContent = Content(
+  name: 'Arrow',
+  imageUrl: Assets.arrow,
+  titleImageUrl: Assets.arrowTitle,
+  videoUrl: Assets.arrowVideoUrl,
+  description:
+      'Based on DC Comics\' Green Arrow, an affluent playboy becomes a vengeful superhero, saving the city from villains armed with just a bow and arrows.',
+);
+
+final Content luciferContent = Content(
+    name: 'Lucifer',
+    imageUrl: Assets.lucifer,
+    titleImageUrl: Assets.luciferTitle,
+    videoUrl: Assets.luciferVideoUrl,
+    description:
+        'Bored with being the Lord of Hell, the devil relocates to Los Angeles, where he opens a nightclub and forms a connection with a homicide detective.');
+
 final List<Content> previews = const [
   Content(
     name: 'Avatar The Last Airbender',
     imageUrl: Assets.atla,
     colors: Colors.orange,
     titleImageUrl: Assets.atlaTitle,
+  ),
+  Content(
+    name: 'Lucifer',
+    imageUrl: Assets.lucifer,
+    colors: Colors.pink,
+    titleImageUrl: Assets.luciferTitle,
+    videoUrl: Assets.luciferVideoUrl,
+  ),
+  Content(
+    name: 'Arrow',
+    imageUrl: Assets.arrow,
+    colors: Colors.brown,
+    titleImageUrl: Assets.arrowTitle,
+  ),
+  Content(
+    name: 'Sintel',
+    imageUrl: Assets.sintel,
+    colors: Colors.green,
+    titleImageUrl: Assets.sintelTitle,
   ),
   Content(
     name: 'The Crown',

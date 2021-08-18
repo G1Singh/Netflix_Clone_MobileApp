@@ -9,6 +9,16 @@ class Assets {
   static const String sintelVideoUrl =
       'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4';
 
+  static const String arrow = '${_images}arrow.jpg';
+  static const String arrowTitle = '${_images}arrow_title.png';
+  static const String arrowVideoUrl =
+      'https://www.youtube.com/watch?v=XQS7JkQmlx8';
+
+  static const String lucifer = '${_images}lucifer.jpg';
+  static const String luciferTitle = '${_images}lucifer_title.png';
+  static const String luciferVideoUrl =
+      'https://www.youtube.com/watch?v=X4bF_quwNtw';
+      
   static const String atla = '${_images}atla.jpg';
   static const String atlaTitle = '${_images}atla_title.png';
 

@@ -16,7 +16,7 @@ class ContentHeader extends StatelessWidget {
       alignment: Alignment.center,
       children: [
         Container(
-          height: 500.0,
+          height: 800.0,
           decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage(
@@ -27,12 +27,16 @@ class ContentHeader extends StatelessWidget {
           ),
         ),
         Container(
-          height: 500.0,
+          height: 800.0,
           decoration: const BoxDecoration(
-            gradient: LinearGradient(colors: [
-              Colors.black,
-              Colors.transparent,
-            ], begin: Alignment.bottomCenter, end: Alignment.topCenter),
+            gradient: LinearGradient(
+              colors: [
+                Colors.black,
+                Colors.transparent,
+              ],
+              begin: Alignment.bottomCenter,
+              end: Alignment.topCenter,
+            ),
           ),
         ),
         Positioned(
@@ -45,7 +49,7 @@ class ContentHeader extends StatelessWidget {
         Positioned(
           left: 0,
           right: 0,
-          bottom: 40.0,
+          bottom: 50.0,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [

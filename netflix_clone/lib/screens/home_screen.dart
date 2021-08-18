@@ -2,6 +2,7 @@
 //import 'dart:html';
 
 import 'package:flutter/material.dart';
+
 import 'package:netflix_clone/Widgets/widgets.dart';
 import 'package:netflix_clone/data/data.dart';
 //import 'package:netflix_clone/models/models.dart';
@@ -35,6 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     final Size screenSize = MediaQuery.of(context).size;
+
     return Scaffold(
       extendBodyBehindAppBar: true,
       floatingActionButton: FloatingActionButton(
@@ -53,7 +55,18 @@ class _HomeScreenState extends State<HomeScreen> {
         slivers: [
           SliverToBoxAdapter(
             child: ContentHeader(
-              featuredContent: sintelContent,
+              featuredContent: luciferContent,
+            ),
+          ),
+          SliverPadding(
+            padding: const EdgeInsets.only(
+              top: 20.0,
+            ),
+            sliver: SliverToBoxAdapter(
+              child: Previews(
+                title: 'Previews',
+                contentList: previews,
+              ),
             ),
           ),
         ],
