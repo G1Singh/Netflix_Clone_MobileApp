@@ -52,12 +52,12 @@ class CustomAppBar extends StatelessWidget {
                   //   title: '',
                   //   onTap: () => print('My List'),
                   // ),
-                  IconButton(
-                    onPressed: () => print('Search'),
-                    icon: Icon(Icons.search),
-                    color: Colors.white,
-                    alignment: Alignment.topLeft,
-                  )
+                  // IconButton(
+                  //   onPressed: () => print('Search'),
+                  //   icon: Icon(Icons.search),
+                  //   color: Colors.white,
+                  //   alignment: Alignment.topLeft,
+                  // ),
                 ],
               ),
             )
