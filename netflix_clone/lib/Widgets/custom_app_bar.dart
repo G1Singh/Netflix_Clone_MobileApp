@@ -5,6 +5,7 @@ import 'package:netflix_clone/assets.dart';
 
 class CustomAppBar extends StatelessWidget {
   final double scrollOffSet;
+
   const CustomAppBar({
     Key key,
     this.scrollOffSet = 0.0,
@@ -14,10 +15,10 @@ class CustomAppBar extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(
         vertical: 10.0,
-        horizontal: 24.0,
+        horizontal: 5.0,
       ),
       color: Colors.black.withOpacity(
-        (scrollOffSet / 350).clamp(0, 1).toDouble(),
+        (scrollOffSet / 700).clamp(0, 1).toDouble(),
       ),
       child: SafeArea(
         child: Row(
@@ -38,10 +39,25 @@ class CustomAppBar extends StatelessWidget {
                     title: 'Movies',
                     onTap: () => print('Movies'),
                   ),
+                  // _AppBarButton(
+                  //   title: 'Recently Added',
+                  //   onTap: () => print('Movies'),
+                  // ),
                   _AppBarButton(
                     title: 'My List',
                     onTap: () => print('My List'),
                   ),
+                  // _AppBarButton(
+                  //   icons : Icon(Icons.search),
+                  //   title: '',
+                  //   onTap: () => print('My List'),
+                  // ),
+                  IconButton(
+                    onPressed: () => print('Search'),
+                    icon: Icon(Icons.search),
+                    color: Colors.white,
+                    alignment: Alignment.topLeft,
+                  )
                 ],
               ),
             )

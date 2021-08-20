@@ -21,9 +21,10 @@ class Previews extends StatelessWidget {
           child: Text(
             title,
             style: const TextStyle(
-                color: Colors.white,
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold),
+              color: Colors.white,
+              fontSize: 20.0,
+              fontWeight: FontWeight.w900,
+            ),
           ),
         ),
         Container(
