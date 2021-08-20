@@ -1,5 +1,3 @@
-// import 'dart:isolate';
-// import 'package:matcher/matcher.dart';
 
 import 'package:flutter/material.dart';
 import 'package:netflix_clone/models/models.dart';
@@ -49,7 +47,7 @@ class ContentList extends StatelessWidget {
                 final Content content = contentList[index];
 
                 return GestureDetector(
-                  onTap: () => print('Content.name'),
+                  onTap: () => print(content.name),
                   child: Container(
                     margin: const EdgeInsets.symmetric(
                       horizontal: 8.0,

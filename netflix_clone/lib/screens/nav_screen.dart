@@ -1,6 +1,8 @@
 //import 'dart:html';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:netflix_clone/cubits/cubits.dart';
 
 import 'screens.dart';
 
@@ -34,7 +36,10 @@ class _NavigationScreenState extends State<NavigationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _screens[_currentIndex],
+      body: BlocProvider<AppBarCubit>(
+        create: (_) => AppBarCubit(),
+        child: _screens[_currentIndex],
+      ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.black,

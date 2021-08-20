@@ -18,9 +18,16 @@ class Assets {
   static const String luciferTitle = '${_images}lucifer_title.png';
   static const String luciferVideoUrl =
       'https://www.youtube.com/watch?v=X4bF_quwNtw';
-      
+
   static const String atla = '${_images}atla.jpg';
   static const String atlaTitle = '${_images}atla_title.png';
+
+  static const String naruto = '${_images}naruto.jpg';
+  static const String narutoTitle = '${_images}naruto_title.png';
+
+  static const String narutoshippuden = '${_images}naruto_shippuden.jpg';
+  static const String narutoshippudenTitle =
+      '${_images}naruto_shippuden_title.png';
 
   static const String blackMirror = '${_images}black_mirror.jpg';
   static const String blackMirrorTitle = '${_images}black_mirror_title.png';

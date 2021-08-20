@@ -43,16 +43,16 @@ final List<Content> previews = const [
     videoUrl: Assets.luciferVideoUrl,
   ),
   Content(
-    name: 'Arrow',
-    imageUrl: Assets.arrow,
-    colors: Colors.brown,
-    titleImageUrl: Assets.arrowTitle,
-  ),
-  Content(
     name: 'Sintel',
     imageUrl: Assets.sintel,
     colors: Colors.green,
     titleImageUrl: Assets.sintelTitle,
+  ),
+  Content(
+    name: 'Arrow',
+    imageUrl: Assets.arrow,
+    colors: Colors.brown,
+    titleImageUrl: Assets.arrowTitle,
   ),
   Content(
     name: 'The Crown',
@@ -85,6 +85,12 @@ final List<Content> previews = const [
     titleImageUrl: Assets.atlaTitle,
   ),
   Content(
+    name: 'Arrow',
+    imageUrl: Assets.arrow,
+    colors: Colors.brown,
+    titleImageUrl: Assets.arrowTitle,
+  ),
+  Content(
     name: 'The Crown',
     imageUrl: Assets.crown,
     colors: Colors.red,
@@ -103,14 +109,45 @@ final List<Content> previews = const [
     titleImageUrl: Assets.caroleAndTuesdayTitle,
   ),
   Content(
+    name: 'Lucifer',
+    imageUrl: Assets.lucifer,
+    colors: Colors.pink,
+    titleImageUrl: Assets.luciferTitle,
+    videoUrl: Assets.luciferVideoUrl,
+  ),
+  Content(
+    name: 'Naruto',
+    imageUrl: Assets.naruto,
+    colors: Colors.yellow,
+    titleImageUrl: Assets.narutoTitle,
+  ),
+  Content(
+    name: 'Naruto',
+    imageUrl: Assets.naruto,
+    colors: Colors.yellow,
+    titleImageUrl: Assets.narutoTitle,
+  ),
+  Content(
     name: 'Black Mirror',
     imageUrl: Assets.blackMirror,
     colors: Colors.green,
     titleImageUrl: Assets.blackMirrorTitle,
   ),
+  Content(
+    name: 'Naruto Shippuden',
+    imageUrl: Assets.narutoshippuden,
+    colors: Colors.yellow,
+    titleImageUrl: Assets.narutoshippudenTitle,
+  ),
 ];
 
 final List<Content> myList = const [
+  Content(
+    name: 'Naruto Shippuden',
+    imageUrl: Assets.narutoshippuden,
+    // colors: Colors.yellow,
+    // titleImageUrl: Assets.narutoshippudenTitle,
+  ),
   Content(
     name: 'Violet Evergarden',
     imageUrl: Assets.violetEvergarden,
@@ -122,6 +159,12 @@ final List<Content> myList = const [
   Content(
     name: 'Kakegurui',
     imageUrl: Assets.kakegurui,
+  ),
+  Content(
+    name: 'Naruto',
+    imageUrl: Assets.naruto,
+    // colors: Colors.yellow,
+    // titleImageUrl: Assets.narutoTitle,
   ),
   // Content(
   //   name: 'Carole and Tuesday',
