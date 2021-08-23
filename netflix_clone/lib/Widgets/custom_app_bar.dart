@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'package:netflix_clone/Widgets/widgets.dart';
 import 'package:netflix_clone/assets.dart';
 
 class CustomAppBar extends StatelessWidget {
@@ -20,49 +21,196 @@ class CustomAppBar extends StatelessWidget {
       color: Colors.black.withOpacity(
         (scrollOffSet / 700).clamp(0, 1).toDouble(),
       ),
-      child: SafeArea(
-        child: Row(
-          children: [
-            Image.asset(Assets.netflixLogo0),
-            const SizedBox(
-              width: 12.0,
+      child: Responsive(
+        mobile: _CustomAppBarMobile(),
+        desktop: _CustomAppBarDesktop(),
+      ),
+    );
+  }
+}
+
+class _CustomAppBarMobile extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Row(
+        children: [
+          Image.asset(Assets.netflixLogo0),
+          const SizedBox(
+            width: 12.0,
+          ),
+          Expanded(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                _AppBarButton(
+                  title: 'TV Shows',
+                  onTap: () => print('TV Shows'),
+                ),
+                _AppBarButton(
+                  title: 'Movies',
+                  onTap: () => print('Movies'),
+                ),
+                // _AppBarButton(
+                //   title: 'Recently Added',
+                //   onTap: () => print('Movies'),
+                // ),
+                _AppBarButton(
+                  title: 'My List',
+                  onTap: () => print('My List'),
+                ),
+                // _AppBarButton(
+                //   icons : Icon(Icons.search),
+                //   title: '',
+                //   onTap: () => print('My List'),
+                // ),
+                // IconButton(
+                //   onPressed: () => print('Search'),
+                //   icon: Icon(Icons.search),
+                //   color: Colors.white,
+                //   alignment: Alignment.topLeft,
+                // ),
+              ],
             ),
-            Expanded(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  _AppBarButton(
-                    title: 'TV Shows',
-                    onTap: () => print('TV Shows'),
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class _CustomAppBarDesktop extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Row(
+        children: [
+          Image.asset(Assets.netflixLogo1),
+          const SizedBox(
+            width: 12.0,
+          ),
+          Expanded(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                _AppBarButton(
+                  title: 'Home',
+                  onTap: () => print('Home'),
+                ),
+                _AppBarButton(
+                  title: 'TV Shows',
+                  onTap: () => print('TV Shows'),
+                ),
+                _AppBarButton(
+                  title: 'Movies',
+                  onTap: () => print('Movies'),
+                ),
+                // _AppBarButton(
+                //   title: 'Recently Added',
+                //   onTap: () => print('Movies'),
+                // ),
+                _AppBarButton(
+                  title: 'Latest',
+                  onTap: () => print('Latest'),
+                ),
+                _AppBarButton(
+                  title: 'My List',
+                  onTap: () => print('My List'),
+                ),
+                // _AppBarButton(
+                //   icons : Icon(Icons.search),
+                //   title: '',
+                //   onTap: () => print('My List'),
+                // ),
+                // IconButton(
+                //   onPressed: () => print('Search'),
+                //   icon: Icon(Icons.search),
+                //   color: Colors.white,
+                //   alignment: Alignment.topLeft,
+                // ),
+              ],
+            ),
+          ),
+          const Spacer(),
+          Expanded(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                IconButton(
+                  padding: EdgeInsets.zero,
+                  onPressed: () => print('Search'),
+                  icon: Icon(
+                    Icons.search,
                   ),
-                  _AppBarButton(
-                    title: 'Movies',
-                    onTap: () => print('Movies'),
+                  iconSize: 28.0,
+                  color: Colors.white,
+                ),
+                _AppBarButton(
+                  title: 'KIDS',
+                  onTap: () => print('KIDS'),
+                ),
+                _AppBarButton(
+                  title: 'DVD',
+                  onTap: () => print('DVD'),
+                ),
+                _AppBarButton(
+                  title: 'Movies',
+                  onTap: () => print('Movies'),
+                ),
+                // _AppBarButton(
+                //   title: 'Recently Added',
+                //   onTap: () => print('Movies'),
+                // ),
+                // _AppBarButton(
+                //   title: 'Latest',
+                //   onTap: () => print('Latest'),
+                // ),
+                // _AppBarButton(
+                //   title: 'My List',
+                //   onTap: () => print('My List'),
+                // ),
+                // _AppBarButton(
+                //   icons : Icon(Icons.search),
+                //   title: '',
+                //   onTap: () => print('My List'),
+                // ),
+                // IconButton(
+                //   onPressed: () => print('Search'),
+                //   icon: Icon(Icons.search),
+                //   color: Colors.white,
+                //   alignment: Alignment.topLeft,
+                // ),
+                // IconButton(
+                //   padding: EdgeInsets.zero,
+                //   onPressed: () => print('Search'),
+                //   icon: Icon(
+                //     Icons.search,
+                //   ),
+                //   iconSize: 28.0,
+                //   color: Colors.white,
+                // ),
+                IconButton(
+                  padding: EdgeInsets.zero,
+                  onPressed: () => print('Gift Card'),
+                  icon: Icon(
+                    Icons.card_giftcard,
                   ),
-                  // _AppBarButton(
-                  //   title: 'Recently Added',
-                  //   onTap: () => print('Movies'),
-                  // ),
-                  _AppBarButton(
-                    title: 'My List',
-                    onTap: () => print('My List'),
+                  iconSize: 28.0,
+                  color: Colors.white,
+                ),
+                IconButton(
+                  padding: EdgeInsets.zero,
+                  onPressed: () => print('Notifications'),
+                  icon: Icon(
+                    Icons.notifications,
                   ),
-                  // _AppBarButton(
-                  //   icons : Icon(Icons.search),
-                  //   title: '',
-                  //   onTap: () => print('My List'),
-                  // ),
-                  // IconButton(
-                  //   onPressed: () => print('Search'),
-                  //   icon: Icon(Icons.search),
-                  //   color: Colors.white,
-                  //   alignment: Alignment.topLeft,
-                  // ),
-                ],
-              ),
-            )
-          ],
-        ),
+                  iconSize: 28.0,
+                  color: Colors.white,
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }

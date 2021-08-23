@@ -1,9 +1,8 @@
-//import 'dart:html';
-
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:netflix_clone/cubits/cubits.dart';
 
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:netflix_clone/Widgets/widgets.dart';
+import 'package:netflix_clone/cubits/cubits.dart';
 import 'screens.dart';
 
 class NavigationScreen extends StatefulWidget {
@@ -40,7 +39,8 @@ class _NavigationScreenState extends State<NavigationScreen> {
         create: (_) => AppBarCubit(),
         child: _screens[_currentIndex],
       ),
-      bottomNavigationBar: BottomNavigationBar(
+      
+      bottomNavigationBar: !Responsive.isDesktop(context) ? BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.black,
         items: _icons
@@ -64,7 +64,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
         unselectedItemColor: Colors.blueGrey[500],
         unselectedFontSize: 11.0,
         onTap: (index) => setState(() => _currentIndex = index),
-      ),
+      ) : null,
     );
   }
 }
